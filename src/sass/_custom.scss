@@ -1,1 +1,91 @@
-/* Add here all your CSS customizations */
+/* GR CSS customizations */
+
+/* ---------------------------------- */
+/* Caution Badge
+------------------------------------- */
+.job-listing-company {
+  .verified-badge {
+    .job-listing {
+      .job-listing-footer {
+        ul li .caution-badge {
+          position: relative;
+          display: inline-block;
+          transform: scale(0.7);
+          top: 2px;
+          margin-left: -2px;
+        }
+      }
+    }
+  }
+}
+
+/* caution Badge */
+.caution-badge {
+	position: relative;
+	height: 25px;
+	width: 25px;
+	display: inline-block;
+	background-color: #b65738;
+	border-radius: 50%;
+	text-align: center;
+	z-index: 10;
+	font-weight: 500;
+}
+
+.caution-badge:before {
+	content: "\e91e";
+	font-family: "Feather-Icons";
+	font-size: 16px;
+	color: #fff;
+	position: relative;
+	top: 0px;
+	line-height: 27px;
+}
+
+.job-listing {
+  .job-listing-company-logo {
+    .caution-badge {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(7px, 7px);
+        }
+    }
+}
+
+/* Long caution Badge */
+.caution-badge-with-title {
+	position: relative;
+	height: 26px;
+	display: flex;
+	top: -1px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 14px;
+	background-color: #b65738;
+	text-align: center;
+	z-index: 10;
+	font-weight: 500;
+	border-radius: 4px;
+	padding: 0 8px 0 0;
+	margin: 0;
+	overflow: hidden;
+	padding-left: 34px;
+	line-height: 27px;
+}
+.caution-badge-with-title:before {
+	content: "\e91e";
+	font-family: "Feather-Icons";
+	font-size: 16px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 26px;
+	height: 26px;
+	width: 26px;
+	display: inline-block;
+	background-color: #b65738;
+}
+
+/* end Caution Badge */
