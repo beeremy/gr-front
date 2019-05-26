@@ -27017,7 +27017,7 @@ a.headline-link:after {
 /* ---------------------------------- */
 /* Caution Badge
 ------------------------------------- */
-.job-listing-company .verified-badge .job-listing .job-listing-footer ul li .caution-badge {
+.job-listing-company .caution-badge, .job-listing .job-listing-footer ul li .caution-badge {
   position: relative;
   display: inline-block;
   transform: scale(0.7);
@@ -27025,7 +27025,7 @@ a.headline-link:after {
   margin-left: -2px;
 }
 
-/* caution Badge */
+/* Verified Badge */
 .caution-badge {
   position: relative;
   height: 25px;
@@ -27037,7 +27037,6 @@ a.headline-link:after {
   z-index: 10;
   font-weight: 500;
 }
-
 .caution-badge:before {
   content: "";
   font-family: "Feather-Icons";
@@ -27055,7 +27054,7 @@ a.headline-link:after {
   transform: translate(7px, 7px);
 }
 
-/* Long caution Badge */
+/* Long Verified Badge */
 .caution-badge-with-title {
   position: relative;
   height: 26px;
@@ -27075,7 +27074,6 @@ a.headline-link:after {
   padding-left: 34px;
   line-height: 27px;
 }
-
 .caution-badge-with-title:before {
   content: "";
   font-family: "Feather-Icons";
@@ -27091,6 +27089,6 @@ a.headline-link:after {
   background-color: #b65738;
 }
 
-/* end Caution Badge */
+/* End caution Badge */
 
 /*# sourceMappingURL=style.css.map */
