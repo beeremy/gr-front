@@ -8498,6 +8498,7 @@ a.apply-now-button i {
   flex: 1;
   position: relative;
   top: 5px;
+  text-align: center;
 }
 .tasks-list-container.tasks-grid-layout .task-listing-bid-inner .button {
   height: 100%;
