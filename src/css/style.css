@@ -8637,6 +8637,11 @@ a.apply-now-button i {
   margin-top: 5px;
   margin-bottom: -10px;
 }
+.freelancer-rating .avis {
+  display: inline-block;
+  color: "blue";
+  font-size: 10px;
+}
 
 .freelancer-name h4 {
   font-size: 18px;
@@ -10234,7 +10239,7 @@ table.basic-table tr:nth-child(odd) {
   content: "";
   display: block;
   color: #febe42;
-  font-size: 22px;
+  font-size: 18px;
 }
 .star-rating .star.empty:before {
   color: #ddd;
@@ -12257,7 +12262,7 @@ input:checked + .switch-button:before {
     margin-bottom: 20px;
   }
 }
-/* Boxed List 
+/* Boxed List
 ------------------------------------- */
 .boxed-list {
   margin-top: 10px;
@@ -12294,7 +12299,7 @@ input:checked + .switch-button:before {
 .boxed-list ul.boxed-list-ul > li {
   display: block;
   background-color: transparent;
-  padding: 35px;
+  padding: 15px 15px 15px 35px;
   border-radius: 4px;
 }
 .boxed-list ul.boxed-list-ul > li:nth-child(2n) {
@@ -12394,7 +12399,7 @@ input:checked + .switch-button:before {
   }
 }
 /* IE 11 Fixes - End */
-/* Bid 
+/* Bid
 ------------------------------------- */
 .bid {
   display: flex;
