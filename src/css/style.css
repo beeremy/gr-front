@@ -6191,7 +6191,7 @@ span.blog-item-tag {
 /* Footer
 ------------------------------------- */
 #footer {
-  background-color: #303030;
+  background-color: #183153;
   color: #c0c0c0;
 }
 #footer p {
@@ -10777,7 +10777,13 @@ input:checked + .switch-button:before {
   display: block;
   max-width: 55%;
 }
-.banner-headline h1, .banner-headline h2, .banner-headline h3, .banner-headline h4 {
+.banner-headline h1 {
+  font-size: 38px;
+  font-weight: 300;
+  color: #777;
+  line-height: 42px;
+}
+.banner-headline h2, .banner-headline h3, .banner-headline h4 {
   font-size: 28px;
   font-weight: 300;
   color: #777;
@@ -10857,7 +10863,8 @@ input:checked + .switch-button:before {
 /* Field Row Styles */
 .intro-search-field {
   padding: 10px 12px;
-  border-right: 1px solid #e4e4e4;
+  border: 1px solid #e0e0e0;
+  border-right: 0px;
   flex: 1;
   align-items: center;
   display: flex;
@@ -27025,7 +27032,7 @@ a.headline-link:after {
   margin-left: -2px;
 }
 
-/* Verified Badge */
+/* Caution Badge */
 .caution-badge {
   position: relative;
   height: 25px;
@@ -27054,7 +27061,7 @@ a.headline-link:after {
   transform: translate(7px, 7px);
 }
 
-/* Long Verified Badge */
+/* Long Caution Badge */
 .caution-badge-with-title {
   position: relative;
   height: 26px;
