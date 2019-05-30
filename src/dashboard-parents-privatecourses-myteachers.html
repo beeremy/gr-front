@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+================================================== -->
+  <title>GR Front</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+================================================== -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/colors/orange-gr.css">
+
+  <!-- Remy
+script only useful during development for clarity in using the components
+================================================== -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      var includes = $('[data-include]');
+      jQuery.each(includes, function() {
+        var file = 'components/' + $(this).data('include') + '.html';
+        $(this).load(file);
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header Container
+================================================== -->
+    <div data-include="header"></div>
+
+    <!-- Header Container / End -->
+
+    <!-- Page Content
+================================================== -->
+    <!-- Dashboard Container -->
+    <div class="dashboard-container">
+
+      <!-- Dashboard Sidebar
+	================================================== -->
+      <div data-include="dashboard-sidebar-parents"></div>
+
+      <!-- Dashboard Sidebar / End -->
+
+
+      <!-- Dashboard Content
+	================================================== -->
+      <div class="dashboard-content-container" data-simplebar>
+        <div class="dashboard-content-inner">
+
+          <!-- Dashboard Headline -->
+          <div class="dashboard-headline">
+            <h3>Vos professeurs</h3>
+
+          </div>
+
+          <!-- Dashboard Box -->
+  				<div class="col-xl-12">
+  					<div class="dashboard-box margin-top-0">
+
+  						<!-- Headline -->
+  						<div class="headline">
+  							<h3><i class="icon-material-outline-supervisor-account"></i> Liste des cours en petits groupes</h3>
+  						</div>
+
+  						<div class="content">
+  							<ul class="dashboard-box-list">
+  								<li>
+  									<!-- Overview -->
+  									<div class="freelancer-overview manage-candidates">
+  										<div class="freelancer-overview-inner">
+
+  											<!-- Avatar -->
+  											<div class="freelancer-avatar">
+  												<a href="#"><img src="images/user-avatar-big-07.jpg" alt=""></a>
+  											</div>
+
+  											<!-- Name -->
+  											<div class="freelancer-name">
+  												<h4><a href="#">Stage de pré-rentrée en Maths Sup</a> <span class="dashboard-status-button green">Confirmé</span></h4>
+
+  												<!-- Details -->
+  												<span class="freelancer-detail-item"><a href="#"><i class="icon-material-outline-date-range"></i> 25-29 août 2019</a></span>
+                          <span class="freelancer-detail-item"><i class="icon-feather-map-pin"></i> Paris 5e</span>
+
+                          <div class="col-xl-12 col-md-12 margin-top-15">
+
+                                <div class="row">
+                                  <div class="col-xl-6 col-md-6 margin-top-15">
+                                    <h4><i class="icon-feather-chevron-right"></i>Mathématiques - Josiane Bilantro</h4>
+                                  </div>
+                                  <div class="col-xl-3 col-md-3 margin-top-15">
+                                    <a href="#" class="button gray ripple-effect">Voir évaluation</a>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="col-xl-6 col-md-6 margin-top-15">
+                                    <h4><i class="icon-feather-chevron-right"></i>Physique - Robert Dimaro</h4>
+                                  </div>
+                                  <div class="col-xl-3 col-md-3 margin-top-15">
+                                    <a href="#" class="button gray ripple-effect">Voir évaluation</a>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="col-xl-6 col-md-6 margin-top-15">
+                                    <h4><i class="icon-feather-chevron-right"></i>Français - Elise de la Sainte Croix</h4>
+                                  </div>
+                                  <div class="col-xl-3 col-md-3 margin-top-15">
+                                    <a href="#" class="button gray ripple-effect">Voir évaluation</a>
+                                  </div>
+                                </div>
+
+                  				</div>
+
+  												<!-- Buttons -->
+  												<div class="buttons-to-right always-visible margin-top-25 margin-bottom-5">
+  													<a href="#" class="button ripple-effect"><i class="icon-feather-file-text"></i> Télécharger facture</a>
+  												</div>
+  											</div>
+  										</div>
+  									</div>
+  								</li>
+
+                  <li>
+  									<!-- Overview -->
+  									<div class="freelancer-overview manage-candidates">
+  										<div class="freelancer-overview-inner">
+
+  											<!-- Avatar -->
+  											<div class="freelancer-avatar">
+  												<a href="#"><img src="images/user-avatar-big-07.jpg" alt=""></a>
+  											</div>
+
+  											<!-- Name -->
+  											<div class="freelancer-name">
+  												<h4><a href="#">Stage de Pâques en Terminale</a> <span class="dashboard-status-button green">Confirmé</span></h4>
+
+  												<!-- Details -->
+  												<span class="freelancer-detail-item"><a href="#"><i class="icon-material-outline-date-range"></i> 21-25 Avril 2018</a></span>
+                          <span class="freelancer-detail-item"><i class="icon-feather-map-pin"></i> Paris 5e</span>
+
+                          <div class="col-xl-12 col-md-12 margin-top-15">
+
+                                <div class="row">
+                                  <div class="col-xl-6 col-md-6 margin-top-15">
+                                    <h4><i class="icon-feather-chevron-right"></i>Mathématiques - Armand Lavierre</h4>
+                                  </div>
+                                  <div class="col-xl-3 col-md-3 margin-top-15">
+                                    <a href="#" class="button gray ripple-effect">Voir évaluation</a>
+                                  </div>
+                                </div>
+                  				</div>
+
+  												<!-- Buttons -->
+  												<div class="buttons-to-right always-visible margin-top-25 margin-bottom-5">
+  													<a href="#" class="button ripple-effect"><i class="icon-feather-file-text"></i> Télécharger facture</a>
+  												</div>
+  											</div>
+  										</div>
+  									</div>
+  								</li>
+
+  							</ul>
+  						</div>
+  					</div>
+  				</div>
+
+          <!-- Footer -->
+          <div data-include="dashboard-footer"></div>
+          <!-- Footer / End -->
+
+        </div>
+      </div>
+      <!-- Dashboard Content / End -->
+
+    </div>
+    <!-- Dashboard Container / End -->
+
+
+
+  </div>
+  <!-- Wrapper / End -->
+
+
+  <!-- Scripts
+================================================== -->
+  <div data-include="scripts"></div>
+
+</body>
+
+</html>
