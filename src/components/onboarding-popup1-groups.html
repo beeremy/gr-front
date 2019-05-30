@@ -1,0 +1,313 @@
+<!-- Make an Offer Popup
+================================================== -->
+<div id="small-dialog" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
+
+	<!--Tabs -->
+	<div class="sign-in-form">
+
+		<ul class="popup-tabs-nav">
+      <li><a href="#new-user">Inscription</a></li>
+			<li><a href="#logged-user">Déjà logué</a></li>
+      <li><a href="#CB">Valider</a></li>
+			<li><a href="#thanks">Merci !</a></li>
+		</ul>
+
+		<div class="popup-tabs-container">
+
+			<!-- Tab -->
+			<div class="popup-tab-content" id="new-user">
+
+				<!-- Welcome Text -->
+				<div class="welcome-text">
+					<h3>Une dernière question</h3>
+				</div>
+
+				<!-- Form -->
+				<form method="post">
+
+          <div class="col-xl-12">
+            <!-- Account Type -->
+            <div class="submit-field">
+              <h3><strong>Vous êtes ?</strong></h3>
+              <div class="account-type margin-top-20">
+                <div>
+                  <input type="radio" name="account-type-radio" id="freelancer-radio" class="account-type-radio"/>
+                  <label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Le parent</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="account-type-radio" id="employer-radio" class="account-type-radio" />
+                  <label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> L'élève</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Welcome Text -->
+          <div class="welcome-text">
+            <h3>Quelques informations sur l'élève</h3>
+          </div>
+
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-outline-account-circle"></i>
+						<input type="text" class="input-text with-border" name="name" id="name" placeholder="Prénom"/>
+					</div>
+
+          <div class="input-with-icon-left">
+            <i class="icon-material-outline-account-circle"></i>
+            <input type="text" class="input-text with-border" name="name" id="name" placeholder="Nom"/>
+          </div>
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-baseline-mail-outline"></i>
+						<input type="text" class="input-text with-border" name="emailaddress" id="emailaddress" placeholder="Email"/>
+					</div>
+
+					<div class="row margin-bottom-25">
+
+						<div class="col-xl-6 col-md-6">
+							<div class="section-headline margin-top-25 margin-bottom-12">
+								<h5>Matières</h5>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="chekcbox1" checked>
+								<label for="chekcbox1"><span class="checkbox-icon"></span> Mathématiques</label>
+							</div>
+							<br>
+							<div class="checkbox">
+								<input type="checkbox" id="chekcbox2">
+								<label for="chekcbox2"><span class="checkbox-icon"></span> Physique</label>
+							</div>
+							<br>
+							<div class="checkbox">
+								<input type="checkbox" id="chekcbox3">
+								<label for="chekcbox3"><span class="checkbox-icon"></span> Français</label>
+							</div>
+						</div>
+
+						<div class="col-xl-6 col-md-6">
+							<div class="section-headline margin-top-25 margin-bottom-12">
+								<h5>Type de classe</h5>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="chekcbox4">
+								<label for="chekcbox4"><span class="checkbox-icon"></span> Classe forte <i class="icon-material-outline-help-outline" title="Adaptée pour les élèves de très bon niveau et autonomes, qui souhaitent approfondir et se perfectionner. Les bases ne seront pas revues pour laisser du temps à la résolution d'exercices difficiles (mais au programme)." data-tippy-placement="top"></i></label>
+							</div>
+
+						</div>
+
+					</div>
+
+          <!-- Welcome Text -->
+          <div class="welcome-text">
+            <h3>Précisez votre demande ?</h3>
+          </div>
+
+					<textarea name="textarea" cols="10" placeholder="Dîtes-nous en plus sur vos objectifs et vos attentes afin d'adapter le stage à vos besoins..." class="with-border"></textarea>
+
+				</form>
+
+				<!-- Button -->
+				<button class="button margin-top-35 full-width button-sliding-icon ripple-effect" type="submit">Enregistrer ma demande <i class="icon-material-outline-arrow-right-alt"></i></button>
+
+			</div>
+
+			<!-- Tab -->
+			<div class="popup-tab-content" id="logged-user">
+
+				<!-- Welcome Text -->
+				<div class="welcome-text">
+					<h3>Une dernière question</h3>
+				</div>
+
+				<!-- Form -->
+				<form method="post">
+
+					<div class="col-xl-12">
+            <div class="submit-field">
+              <div class="account-type margin-top-20">
+                <div>
+                  <input type="radio" name="account-type-radio" id="alain-radio" class="account-type-radio"/>
+                  <label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Alain</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="account-type-radio" id="pierre-radio" class="account-type-radio" />
+                  <label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Pierre</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="account-type-radio" id="ajouter-radio" class="account-type-radio" />
+                  <label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-add-circle-outline"></i> Ajouter</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+					<!-- Welcome Text -->
+					<div class="welcome-text">
+						<h3>Quelques informations sur l'élève</h3>
+					</div>
+
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-outline-account-circle"></i>
+						<input type="text" class="input-text with-border" name="name" id="name" placeholder="Prénom"/>
+					</div>
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-outline-account-circle"></i>
+						<input type="text" class="input-text with-border" name="name" id="name" placeholder="Nom"/>
+					</div>
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-baseline-mail-outline"></i>
+						<input type="text" class="input-text with-border" name="emailaddress" id="emailaddress" placeholder="Email"/>
+					</div>
+
+					<div class="row margin-bottom-25">
+
+						<div class="col-xl-6 col-md-6">
+							<div class="section-headline margin-top-25 margin-bottom-12">
+								<h5>Matières</h5>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="chekcbox1" checked>
+								<label for="chekcbox1"><span class="checkbox-icon"></span> Mathématiques</label>
+							</div>
+							<br>
+							<div class="checkbox">
+								<input type="checkbox" id="chekcbox2">
+								<label for="chekcbox2"><span class="checkbox-icon"></span> Physique</label>
+							</div>
+							<br>
+							<div class="checkbox">
+								<input type="checkbox" id="chekcbox3">
+								<label for="chekcbox3"><span class="checkbox-icon"></span> Français</label>
+							</div>
+						</div>
+
+						<div class="col-xl-6 col-md-6">
+							<div class="section-headline margin-top-25 margin-bottom-12">
+								<h5>Type de classe</h5>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="chekcbox4">
+								<label for="chekcbox4"><span class="checkbox-icon"></span> Classe forte <i class="icon-material-outline-help-outline" title="Adaptée pour les élèves de très bon niveau et autonomes, qui souhaitent approfondir et se perfectionner. Les bases ne seront pas revues pour laisser du temps à la résolution d'exercices difficiles (mais au programme)." data-tippy-placement="top"></i></label>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- Welcome Text -->
+					<div class="welcome-text">
+						<h3>Précisez votre demande ?</h3>
+					</div>
+
+					<textarea name="textarea" cols="10" placeholder="Dîtes-nous en plus sur vos objectifs et vos attentes afin d'adapter le stage à vos besoins..." class="with-border"></textarea>
+
+				</form>
+
+				<!-- Button -->
+				<button class="button margin-top-35 full-width button-sliding-icon ripple-effect" type="submit">Enregistrer ma demande <i class="icon-material-outline-arrow-right-alt"></i></button>
+
+			</div>
+
+      <!-- Tab -->
+			<div class="popup-tab-content" id="CB">
+
+				<!-- Hedline -->
+				<h3>Moyen de paiement</h3>
+
+				<!-- Payment Methods Accordion -->
+				<div class="payment margin-top-30">
+
+					<div class="payment-tab  payment-tab-active">
+						<div class="payment-tab-trigger">
+							<input checked type="radio" name="cardType" id="creditCart" value="creditCard">
+							<label for="creditCart">Carte de crédit</label>
+							<img class="payment-logo" src="images/creditcards.png" alt="">
+						</div>
+
+						<div class="payment-tab-content">
+							<div class="row payment-form-row">
+
+								<div class="col-md-6">
+									<div class="card-label">
+										<input id="nameOnCard" name="nameOnCard" required type="text" placeholder="Titulaire de la carte">
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="card-label">
+										<input id="cardNumber" name="cardNumber" placeholder="Numéro de carte crédit" required type="text">
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="card-label">
+										<input id="expiryDate" placeholder="Date d'expiration" required type="text">
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="card-label">
+										<input id="cvv" required type="text" placeholder="CVV">
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+					<div class="payment-tab">
+						<div class="payment-tab-trigger">
+							<input id="paypal" name="cardType" type="radio" value="paypal">
+							<label for="paypal">Chèque</label>
+							<img class="payment-logo paypal" src="images/bankcheck.png" alt="">
+						</div>
+
+						<div class="payment-tab-content">
+							<p>À envoyer au 3 rue de l'estrapade - 75005 Paris à l'ordre de Groupe Réussite</p>
+							<p>Paiement en 3 fois possible.</p>
+						</div>
+					</div>
+
+
+
+				</div>
+				<!-- Payment Methods Accordion / End -->
+
+
+				<!-- Button -->
+				<button class="button margin-top-35 full-width button-sliding-icon ripple-effect" type="submit">Valider le paiement <i class="icon-material-outline-arrow-right-alt"></i></button>
+
+			</div>
+
+			<!-- Login -->
+			<div class="popup-tab-content" id="thanks">
+
+				<!-- Welcome Text -->
+				<div class="welcome-text">
+					<h3>Inscription validée !</h3>
+				</div>
+
+        <p>Si CB: Votre inscription est validée et vous recevrez les supports une semaine avant les débuts du stage.
+          Si besoin, nous sommes à votre entière disposition par téléphone.</p>
+
+				<p>Si Chèque: Votre inscription sera définitivement validée à la réception de votre règlement.
+					Si besoin, nous sommes à votre entière disposition par téléphone.</p>
+          <button class="button margin-top-35 full-width button-sliding-icon ripple-effect" type="submit">Appelez-nous au 01 84 88 32 69 <i class="icon-feather-phone"></i></button>
+
+
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- Make an Offer Popup / End -->
