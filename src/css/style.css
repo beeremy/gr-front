@@ -10246,6 +10246,10 @@ table.basic-table tr:nth-child(odd) {
   color: #ddd;
 }
 
+.star-rating-centered {
+  display: inline-flex;
+}
+
 .rating:after {
   content: ".";
   display: block;
@@ -27128,6 +27132,24 @@ a.headline-link:after {
   background: #f6a421;
   color: #fff;
   text-align: center;
+}
+
+/* Footer */
+.footer-top-section {
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.footer-rows-right .footer-row:first-child {
+  border-left: 1px solid #c0c0c0;
+}
+
+.footer-row {
+  border-right: 1px solid #c0c0c0;
+  border-left: 1px solid #c0c0c0;
+}
+
+.footer-bottom-section {
+  border-top: 1px solid #c0c0c0;
 }
 
 /*# sourceMappingURL=style.css.map */
