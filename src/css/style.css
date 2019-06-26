@@ -27103,5 +27103,31 @@ a.headline-link:after {
 }
 
 /* End caution Badge */
+/* ---------------------------------- */
+/* Header
+------------------------------------- */
+#logo img {
+  top: 44%;
+}
+
+/* ---------------------------------- */
+/* End header
+------------------------------------- */
+/* List Layout Badge */
+.list-apply-badge {
+  position: absolute;
+  right: 15px;
+  padding: 10px 20px;
+  line-height: 15px;
+  position: relative;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-block;
+  transition: all 0.3s;
+  border-radius: 40px;
+  background: #f6a421;
+  color: #fff;
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
