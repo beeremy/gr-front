@@ -26,6 +26,10 @@
   }
 }
 
+.star-rating-centered {
+  display: inline-flex;
+}
+
 .rating:after {
   content: ".";
   display: block;
