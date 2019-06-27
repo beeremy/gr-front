@@ -133,3 +133,38 @@
 .footer-bottom-section {
   border-top: 1px solid #c0c0c0;
 }
+
+/* Hover State */
+
+.category-box:hover {
+  background: #183153;
+}
+
+/* ---------------------------------- */
+/* Slick Slider
+------------------------------------- */
+
+.slick-prev, .slick-next {
+  background-color: #183153;
+}
+
+
+/* ---------------------------------- */
+/* How it works
+------------------------------------- */
+.how-it-works {
+  color: #183153;
+}
+
+/* ---------------------------------- */
+/*Freelancer rating
+------------------------------------- */
+.freelancer-rating {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  .avis {
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 5px;
+  }
+}
