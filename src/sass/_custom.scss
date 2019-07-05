@@ -35,6 +35,15 @@
   }
 }
 
+.caution-badge-small {
+  height: 20px;
+  width: 20px;
+  &:before {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
 .job-listing .job-listing-company-logo .caution-badge {
   position: absolute;
   bottom: 0;
@@ -175,43 +184,18 @@
 ------------------------------------- */
 .photo-box {
   &:hover {
-    box-shadow: 0 4px 12px rgba($primary-color, 0.25);
-    transform: translateY(-10px);
     &:before {
-      background: $secondary-color;
-      opacity: 0.95;
+      background: $secondary-color !important;
     }
   }
-  &.small {
-    height: 160px;
-    margin-bottom: 30px;
-    &:hover {
-      transform: translateY(-5px);
-    }
-    .photo-box-content {
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      text-align: center;
-      bottom: auto;
-      top: 50%;
-      transform: translateY(-49%);
-      h3 {
-        font-size: $body-font-size;
-        font-weight: 600;
-      }
-      span {
-        color: #fff;
-        background: $primary-color;
-        font-size: 14px;
-        line-height: 18px;
-        margin-top: 5px;
-        transition: 0.3s;
-      }
-    }
-    &:hover .photo-box-content span {
-      color: #fff;
-      background: rgba(0, 0, 0, 0.2);
-    }
-  }
+}
+
+
+/* ---------------------------------- */
+/* Tasks - list Layout
+------------------------------------- */
+
+.task-listing-bid-inner {
+  padding: 30px;
+  text-align: center;
 }
