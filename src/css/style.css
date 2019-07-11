@@ -27202,4 +27202,11 @@ a.headline-link:after {
   text-align: center;
 }
 
+/* ---------------------------------- */
+/* Header - Layout
+------------------------------------- */
+.user-avatar-icon {
+  font-size: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
