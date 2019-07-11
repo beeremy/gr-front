@@ -27209,4 +27209,50 @@ a.headline-link:after {
   font-size: 30px;
 }
 
+.header-notifications-trigger-allow-link {
+  font-size: 22px;
+  color: #333;
+  position: relative;
+  top: 55%;
+  transform: translate3d(0, -50%, 0);
+}
+.header-notifications-trigger-allow-link a {
+  font-size: 22px;
+  color: #333;
+  position: relative;
+  top: 55%;
+  transform: translate3d(0, -50%, 0);
+}
+
+/* ---------------------------------- */
+/* Stage - Layout
+------------------------------------- */
+span.bookmark-icon-price {
+  font-size: 18px;
+  position: absolute;
+  z-index: 101;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  color: #828080;
+  display: block;
+  height: 39px;
+  width: 59px;
+  transition: all 0.4s;
+  line-height: 27px;
+}
+
+.account-type input.account-type-radio ~ label:hover {
+  color: #888;
+  background-color: #ffe1b0;
+}
+.account-type input.account-type-radio:checked ~ label {
+  color: #fff;
+  background-color: #f6a421;
+}
+
+.small-footer .footer-social-links {
+  flex: 2;
+}
+
 /*# sourceMappingURL=style.css.map */
