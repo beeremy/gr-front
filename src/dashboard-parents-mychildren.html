@@ -11,6 +11,7 @@
 
   <!-- CSS
 ================================================== -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/colors/orange-gr.css">
 
@@ -67,7 +68,7 @@ script only useful during development for clarity in using the components
 
           <div class="col-xl-4 col-md-4">
             <div class="section-headline margin-bottom-25">
-            <a href="#" class="button ripple-effect">Ajouter un enfant <i class="icon-material-outline-add"></i></a>
+            <button href="#small-dialog" class="button popup-with-zoom-anim full-width button-sliding-icon ripple-effect margin-top-10" type="submit" form="login-form">Ajouter un enfant <i class="icon-material-outline-add"></i></button>
           </div>
           </div>
 
@@ -198,6 +199,10 @@ script only useful during development for clarity in using the components
   </div>
   <!-- Wrapper / End -->
 
+
+  <!-- Popup -->
+  <div data-include="mychildren-add-popup"></div>
+  <!-- Popup / End-->
 
   <!-- Scripts
 ================================================== -->

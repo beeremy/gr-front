@@ -27242,6 +27242,9 @@ span.bookmark-icon-price {
   line-height: 27px;
 }
 
+/* ---------------------------------- */
+/* Espace parent - Layout
+------------------------------------- */
 .account-type input.account-type-radio ~ label:hover {
   color: #888;
   background-color: #ffe1b0;
@@ -27253,6 +27256,10 @@ span.bookmark-icon-price {
 
 .small-footer .footer-social-links {
   flex: 2;
+}
+
+.user-avatar-icon-child {
+  font-size: 70px;
 }
 
 /*# sourceMappingURL=style.css.map */

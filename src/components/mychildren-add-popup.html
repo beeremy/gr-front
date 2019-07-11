@@ -1,0 +1,206 @@
+<!-- Make an Offer Popup
+================================================== -->
+<div id="small-dialog" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
+
+	<!--Tabs -->
+	<div class="sign-in-form">
+
+		<ul class="popup-tabs-nav">
+      <li><a href="#new-school">Ajouter un élève</a></li>
+		</ul>
+
+		<div class="popup-tabs-container">
+
+			<!-- Tab -->
+			<div class="popup-tab-content" id="new-school">
+
+				<!-- Welcome Text -->
+				<div class="welcome-text">
+					<h3>Ses coordonnées</h3>
+				</div>
+
+				<!-- Form -->
+				<form method="post">
+
+					<div class="col-xl-12">
+						<div class="section-headline margin-top-25 margin-bottom-12">
+							<h5>Standard select boxes</h5>
+						</div>
+
+						<select class="selectpicker">
+							<option>Mustard</option>
+							<option>Ketchup</option>
+							<option>Relish</option>
+						</select>
+					</div>
+
+					<div class="col-xl-12 col-md-12">
+						<div class="section-headline margin-top-45 margin-bottom-12">
+							<h5>All above select boxes are also available with border</h5>
+						</div>
+
+						<select class="selectpicker with-border" multiple>
+							<option>Mustard</option>
+							<option>Ketchup</option>
+							<option>Relish</option>
+							<option>Mayonnaise</option>
+							<option>Tabasco</option>
+							<option>Salsa</option>
+						</select>
+					</div>
+
+					<div class="col-xl-12">
+						<div class="section-headline margin-top-45 margin-bottom-12">
+							<h5>Select boxes with icons</h5>
+						</div>
+
+						<select class="selectpicker" multiple data-selected-text-format="count > 1">
+							<option data-icon="icon-material-outline-assignment" selected>Assignment</option>
+							<option data-icon="icon-material-outline-access-alarm">Alarm</option>
+							<option data-icon="icon-material-outline-account-circle">Account</option>
+							<option data-icon="icon-material-outline-cake">Cake</option>
+						</select>
+					</div>
+
+          <div class="col-xl-12">
+            <!-- Account Type -->
+            <div class="submit-field">
+              <h3><strong>Vous êtes ?</strong></h3>
+              <div class="account-type margin-top-20">
+                <div>
+                  <input type="radio" name="account-type-radio" id="freelancer-radio" class="account-type-radio"/>
+                  <label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Le parent</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="account-type-radio" id="employer-radio" class="account-type-radio" />
+                  <label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> L'élève</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Welcome Text -->
+          <div class="welcome-text">
+            <h3>Quelques informations sur l'élève</h3>
+          </div>
+
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-outline-account-circle"></i>
+						<input type="text" class="input-text with-border" name="name" id="name" placeholder="Prénom"/>
+					</div>
+
+          <div class="input-with-icon-left">
+            <i class="icon-material-outline-account-circle"></i>
+            <input type="text" class="input-text with-border" name="name" id="name" placeholder="Nom"/>
+          </div>
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-baseline-mail-outline"></i>
+						<input type="text" class="input-text with-border" name="emailaddress" id="emailaddress" placeholder="Email"/>
+					</div>
+
+          <!-- Welcome Text -->
+          <div class="welcome-text">
+            <h3>Précisez votre demande ?</h3>
+          </div>
+
+					<textarea name="textarea" cols="10" placeholder="Accompagnement ponctuel ou régulier ; contrainte sur le lieu du cours ; informations spécifiques à transmettre au professeur..." class="with-border"></textarea>
+
+				</form>
+
+				<!-- Button -->
+				<button class="button margin-top-35 full-width button-sliding-icon ripple-effect" type="submit">Envoyer ma demande <i class="icon-material-outline-arrow-right-alt"></i></button>
+
+			</div>
+
+      <!-- Tab -->
+			<div class="popup-tab-content" id="logged-user">
+
+				<!-- Welcome Text -->
+				<div class="welcome-text">
+					<h3>Pour quel élève ?</h3>
+				</div>
+
+				<!-- Form -->
+				<form method="post">
+
+          <div class="col-xl-12">
+            <!-- Account Type -->
+            <div class="submit-field">
+              <div class="account-type margin-top-20">
+                <div>
+                  <input type="radio" name="account-type-radio" id="alain-radio" class="account-type-radio"/>
+                  <label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Alain</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="account-type-radio" id="pierre-radio" class="account-type-radio" />
+                  <label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Pierre</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="account-type-radio" id="ajouter-radio" class="account-type-radio" />
+                  <label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-add-circle-outline"></i> Ajouter</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Welcome Text -->
+          <div class="welcome-text">
+            <h3>Quelques informations sur le nouvel élève</h3>
+          </div>
+
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-outline-account-circle"></i>
+						<input type="text" class="input-text with-border" name="name" id="name" placeholder="Prénom"/>
+					</div>
+
+          <div class="input-with-icon-left">
+            <i class="icon-material-outline-account-circle"></i>
+            <input type="text" class="input-text with-border" name="name" id="name" placeholder="Nom"/>
+          </div>
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-baseline-mail-outline"></i>
+						<input type="text" class="input-text with-border" name="emailaddress" id="emailaddress" placeholder="Email"/>
+					</div>
+
+          <!-- Welcome Text -->
+          <div class="welcome-text">
+            <h3>Précisez votre demande ?</h3>
+          </div>
+
+					<textarea name="textarea" cols="10" placeholder="Accompagnement ponctuel ou régulier ; contrainte sur le lieu du cours ; informations spécifiques à transmettre au professeur..." class="with-border"></textarea>
+
+				</form>
+
+				<!-- Button -->
+				<button class="button margin-top-35 full-width button-sliding-icon ripple-effect" type="submit">Envoyer ma demande <i class="icon-material-outline-arrow-right-alt"></i></button>
+
+			</div>
+
+			<!-- Login -->
+			<div class="popup-tab-content" id="thanks">
+
+				<!-- Welcome Text -->
+				<div class="welcome-text">
+					<h3>Demande bien reçue !</h3>
+				</div>
+
+        <p>Nous reviendrons vers vous dans les plus brefs délais.
+          Si besoin, nous sommes à votre entière disposition par téléphone.</p>
+          <button class="button margin-top-35 full-width button-sliding-icon ripple-effect" type="submit">Appelez-nous au 01 84 88 32 69 <i class="icon-feather-phone"></i></button>
+
+
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- Make an Offer Popup / End -->
