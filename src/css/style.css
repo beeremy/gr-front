@@ -27340,4 +27340,11 @@ textarea:disabled {
   border-bottom: 1px solid #2a41e8;
 }
 
+/* ---------------------------------- */
+/* Group - Layout
+------------------------------------- */
+.single-page-header .salary-box {
+  background-color: #ffffff9e;
+}
+
 /*# sourceMappingURL=style.css.map */
