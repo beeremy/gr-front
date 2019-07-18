@@ -268,3 +268,11 @@ span.bookmark-icon-price {
 .checkbox {
   margin-right: 20px;
 }
+
+input[type=text]:disabled {
+  background: #f3f1f1;
+}
+
+textarea:disabled {
+  background: #f3f1f1;
+}
