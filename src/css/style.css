@@ -27274,4 +27274,70 @@ textarea:disabled {
   background: #f3f1f1;
 }
 
+/* ---------------------------------- */
+/* Checkout - Layout
+------------------------------------- */
+.font-23 {
+  font-size: 20px;
+}
+
+#promo-code-good, #promo-code-false, #discount-line {
+  display: none;
+}
+
+/* ---------------------------------- */
+/* Invoice - Layout
+------------------------------------- */
+#invoice {
+  font-family: "Nunito", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-size: 100%;
+  color: #666;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0px auto 0px auto;
+  background: white;
+}
+#invoice strong {
+  font-weight: 600;
+  color: #333;
+  display: inline-block;
+}
+#invoice table {
+  margin: 0 0 15px;
+  width: 100%;
+  padding: 1px 0;
+  border-spacing: 0;
+  border-bottom: 1px solid #ddd;
+}
+#invoice th, #invoice td {
+  padding: 15px 0;
+  text-align: left;
+}
+#invoice th {
+  font-weight: 700;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+}
+#invoice th:last-child {
+  text-align: right;
+}
+#invoice td:last-child {
+  text-align: right;
+}
+#invoice th span {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+#invoice th span::after {
+  content: "";
+  width: 100%;
+  bottom: -16px;
+  position: absolute;
+  right: 0;
+  border-bottom: 1px solid #2a41e8;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -67,33 +67,38 @@
 
 					<div class="row margin-bottom-25">
 
-						<div class="col-xl-6 col-md-6">
+						<div class="col-xl-12 col-md-12">
 							<div class="section-headline margin-top-25 margin-bottom-12">
 								<h5>Matières</h5>
 							</div>
 							<div class="checkbox">
 								<input type="checkbox" id="chekcbox1" checked>
-								<label for="chekcbox1"><span class="checkbox-icon"></span> Mathématiques</label>
+								<label for="chekcbox1"><span class="checkbox-icon"></span> Mathématiques <small><i>3 places restantes</i></small></label>
 							</div>
 							<br>
 							<div class="checkbox">
 								<input type="checkbox" id="chekcbox2">
-								<label for="chekcbox2"><span class="checkbox-icon"></span> Physique</label>
+								<label for="chekcbox2"><span class="checkbox-icon"></span> Physique <small><i>8 places restantes</i></small></label>
 							</div>
 							<br>
 							<div class="checkbox">
 								<input type="checkbox" id="chekcbox3">
-								<label for="chekcbox3"><span class="checkbox-icon"></span> Français</label>
+								<label for="chekcbox3"><span class="checkbox-icon"></span> Français <small><i>10 places restantes</i></small></label>
 							</div>
 						</div>
 
-						<div class="col-xl-6 col-md-6">
+						<div class="col-xl-12 col-md-12">
 							<div class="section-headline margin-top-25 margin-bottom-12">
 								<h5>Type de classe</h5>
 							</div>
 							<div class="checkbox">
 								<input type="checkbox" id="chekcbox4">
 								<label for="chekcbox4"><span class="checkbox-icon"></span> Classe forte <i class="icon-material-outline-help-outline" title="Adaptée pour les élèves de très bon niveau et autonomes, qui souhaitent approfondir et se perfectionner. Les bases ne seront pas revues pour laisser du temps à la résolution d'exercices difficiles (mais au programme)." data-tippy-placement="top"></i></label>
+							</div>
+
+							<div class="checkbox">
+								<input type="checkbox" id="chekcbox4">
+								<label for="chekcbox4"><span class="checkbox-icon"></span> Classe normale <i class="icon-material-outline-help-outline" title="Adaptée pour les élèves qui souhaitent revoir les bases du cours, la méthodologie, de combler des lacunes importantes et faire des exercices de niveau graduel dans l'objectif d'obtenir le bac voire la mention etc. Le programme est identique à la classe forte mais la cadence est plus adaptée. Le défi : combler ses lacunes et connaître ses classiques ! " data-tippy-placement="top"></i></label>
 							</div>
 
 						</div>
@@ -221,6 +226,61 @@
 			<div class="popup-tab-content" id="CB">
 
 				<!-- Hedline -->
+				<h3>Récapitulatif de votre commande</h3>
+
+				<div id="invoice">
+
+					<!-- Invoice -->
+					<div class="row">
+						<div class="col-xl-12">
+							<table class="margin-top-20">
+								<tr>
+									<th>Description</th>
+									<th>Nb. d'heures</th>
+									<th>Prix</th>
+									<th>Total</th>
+								</tr>
+
+								<tr>
+									<td>Stage pré-rentrée</td>
+									<td>30</td>
+									<td>20.00</td>
+									<td>600.00</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="col-xl-4 col-xl-offset-8">
+
+							<table id="totals">
+								<tr id="discount-line">
+									<td>Remise</td>
+									<td id="discount-value">50.00 €</td>
+								</tr>
+								<tr>
+									<th>Total</th>
+									<th><span id="valeurcommande">600.00 €</span></th>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+					<div class="row margin-top-10 margin-bottom-10">
+						<div class="col-xl-5 col-md-5">
+							<input id="code-promo" placeholder="Code promo" required type="text">
+						</div>
+						<div id="promo-code-good" class="padding-top-13 col-xl-1 col-md-1">
+							<i class="icon-material-outline-check font-23"></i>
+						</div>
+						<div id="promo-code-false" class="padding-top-13 col-xl-1 col-md-1">
+							<i class="icon-material-outline-highlight-off font-23"></i>
+						</div>
+					</div>
+					<p><small>fake code = leboncode</small></p>
+
+				</div>
+
+				<!-- Hedline -->
 				<h3>Moyen de paiement</h3>
 
 				<!-- Payment Methods Accordion -->
@@ -311,3 +371,27 @@
 	</div>
 </div>
 <!-- Make an Offer Popup / End -->
+
+<script>
+	$(document).ready(function () {
+		$("#valeurcommande").text("600.00 €")
+		$("#discount-value").text("0")
+	})
+	let fakePromoCode = "leboncode"
+	$("#code-promo").on("change keyup paste", function(){
+			let value = $("#code-promo").val()
+			if(value === fakePromoCode) {
+				$("#promo-code-false").hide()
+				$("#promo-code-good").show("slow")
+				$("#discount-line").show("slow")
+				$("#discount-value").text("60.00")
+				$("#valeurcommande").text("540.00 €")
+			}
+			else {
+				$("#promo-code-good").hide()
+				$("#promo-code-false").show("slow")
+				$("#discount-value").text("0.00")
+				$("#valeurcommande").text("600.00 €")
+			}
+	})
+</script>
