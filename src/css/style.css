@@ -27155,6 +27155,14 @@ a.headline-link:after {
   border-top: 1px solid #c0c0c0;
 }
 
+.footer-middle-section {
+  padding-bottom: 0;
+}
+
+.footer-links {
+  padding-bottom: 45px;
+}
+
 /* Hover State */
 .category-box:hover {
   background: #183153;
