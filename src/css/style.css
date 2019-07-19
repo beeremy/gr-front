@@ -27190,9 +27190,8 @@ a.headline-link:after {
   margin-bottom: 0px;
 }
 .freelancer-rating .avis {
-  display: inline-block;
-  font-size: 15px;
-  margin-left: 5px;
+  position: relative;
+  top: 3px;
 }
 
 /* ---------------------------------- */
