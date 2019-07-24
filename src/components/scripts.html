@@ -28,7 +28,18 @@ $('#snackbar-user-status label').click(function() {
 </script>
 
 <script>
+	// enabling the selects
   $(document).ready(function () {
     $('.selectpicker').selectpicker();
+  });
+</script>
+
+
+<script>
+	// Dashboard menu selector
+  $(document).ready(function () {
+		let loc = window.location.href
+		let page = loc.split('/').pop().slice(0, -5);
+		$('#'+page).addClass('active');
   });
 </script>
