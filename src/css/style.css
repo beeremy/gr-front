@@ -27117,6 +27117,12 @@ a.headline-link:after {
   top: 44%;
 }
 
+@media (max-width: 1099px) {
+  #logo img {
+    top: 48%;
+    max-width: 150px;
+  }
+}
 /* ---------------------------------- */
 /* End header
 ------------------------------------- */
@@ -27192,6 +27198,7 @@ a.headline-link:after {
 .freelancer-rating .avis {
   position: relative;
   top: 3px;
+  margin-left: 5px;
 }
 
 /* ---------------------------------- */
