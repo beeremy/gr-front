@@ -1,6 +1,14 @@
 /* GR CSS customizations */
 
 /* ---------------------------------- */
+/* Generic
+------------------------------------- */
+
+.soft-link {
+  color: #183153;
+}
+
+/* ---------------------------------- */
 /* Caution Badge
 ------------------------------------- */
 
@@ -367,4 +375,13 @@ textarea:disabled {
 
 .single-page-header .salary-box {
   background-color: #ffffff9e;
+}
+
+
+/* ---------------------------------- */
+/* Inputs
+------------------------------------- */
+
+.input-error {
+  border-color: #e16262 !important;
 }
