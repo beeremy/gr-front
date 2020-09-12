@@ -264,6 +264,11 @@ span.bookmark-icon-price {
   line-height: $body-line-height;
 }
 
+a.apply-now-info {
+  background-color: $secondary-color !important;
+}
+
+
 /* ---------------------------------- */
 /* Espace parent - Layout
 ------------------------------------- */
@@ -384,4 +389,13 @@ textarea:disabled {
 
 .input-error {
   border-color: #e16262 !important;
+}
+
+
+/* ---------------------------------- */
+/* Contact
+------------------------------------- */
+
+#contact div select {
+    margin-bottom: 22px;
 }

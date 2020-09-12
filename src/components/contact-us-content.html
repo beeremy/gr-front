@@ -62,12 +62,21 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="input-with-icon-left">
+								<input class="with-border" name="name" type="text" id="name" placeholder="Votre prénom" required="required" />
+								<i class="icon-material-outline-face"></i>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="input-with-icon-left">
 								<input class="with-border" name="name" type="text" id="name" placeholder="Votre nom" required="required" />
 								<i class="icon-material-outline-account-circle"></i>
 							</div>
 						</div>
 
-						<div class="col-md-6">
+					</div>
+					<div class="row">
+
+						<div class="col-md-12">
 							<div class="input-with-icon-left">
 								<input class="with-border" name="email" type="email" id="email" placeholder="Votre email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
 								<i class="icon-material-outline-email"></i>
@@ -75,10 +84,13 @@
 						</div>
 					</div>
 
-					<div class="input-with-icon-left">
-						<input class="with-border" name="subject" type="text" id="subject" placeholder="Sujet" required="required" />
-						<i class="icon-material-outline-assignment"></i>
-					</div>
+					<select class="selectpicker default with-border margin-bottom-22" data-selected-text-format="count" data-size="7" title="Toutes les matières" >
+							<option>Je veux des informations sur les stages</option>
+							<option>Je veux des informations sur les cours particuliers</option>
+							<option>Je veux donner des cours chez Groupe Réussite</option>
+							<option>Je veux être guidé(e) dans mon choix entre cours particuliers et stage</option>
+							<option>Autre</option>
+						</select>
 
 					<div>
 						<textarea class="with-border" name="comments" cols="40" rows="5" id="comments" placeholder="Message" spellcheck="true" required="required"></textarea>
