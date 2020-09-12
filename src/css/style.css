@@ -21876,6 +21876,9 @@ span.bookmark-icon-price {
   transition: all 0.4s;
   line-height: 27px; }
 
+a.apply-now-info {
+  background-color: #183153 !important; }
+
 /* ---------------------------------- */
 /* Espace parent - Layout
 ------------------------------------- */
