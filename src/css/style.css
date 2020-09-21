@@ -21876,6 +21876,10 @@ span.bookmark-icon-price {
   transition: all 0.4s;
   line-height: 27px; }
 
+span.bookmark-icon-price.hours {
+  width: 200px;
+  text-align: right; }
+
 a.apply-now-info {
   background-color: #183153 !important; }
 
