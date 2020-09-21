@@ -264,6 +264,11 @@ span.bookmark-icon-price {
   line-height: $body-line-height;
 }
 
+span.bookmark-icon-price.hours {
+  width: 200px;
+  text-align: right;
+}
+
 a.apply-now-info {
   background-color: $secondary-color !important;
 }
