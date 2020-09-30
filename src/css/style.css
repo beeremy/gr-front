@@ -21848,16 +21848,22 @@ a.headline-link {
 
 .header-notifications-trigger-allow-link {
   font-size: 22px;
-  color: #333;
+  color: #666;
   position: relative;
-  top: 55%;
+  top: 41%;
   transform: translate3d(0, -50%, 0); }
   .header-notifications-trigger-allow-link a {
-    font-size: 22px;
-    color: #333;
+    font-size: 16px;
+    color: #666;
     position: relative;
-    top: 55%;
+    top: 41%;
     transform: translate3d(0, -50%, 0); }
+    .header-notifications-trigger-allow-link a i {
+      font-size: 28px;
+      margin-left: 5px;
+      position: relative !important;
+      top: 7px !important;
+      color: #333; }
 
 /* ---------------------------------- */
 /* Stage - Layout

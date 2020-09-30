@@ -232,16 +232,23 @@
 
 .header-notifications-trigger-allow-link {
   font-size: 22px;
-  color: $body-heading-color;
+  color: $body-font-color;
   position: relative;
-  top: 55%;
+  top: 41%;
   transform: translate3d(0, -50%, 0);
   a {
-    font-size: 22px;
-    color: $body-heading-color;
+    font-size: 16px;
+    color: $body-font-color;
     position: relative;
-    top: 55%;
+    top: 41%;
     transform: translate3d(0, -50%, 0);
+    i {
+      font-size: 28px;
+      margin-left: 5px;
+      position: relative !important;
+      top: 7px !important;
+      color: $body-heading-color
+    }
   }
 }
 
