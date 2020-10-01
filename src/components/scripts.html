@@ -43,3 +43,22 @@ $('#snackbar-user-status label').click(function() {
 		$('#'+page).addClass('active');
   });
 </script>
+
+<script>
+// Teacher header sticky function
+$(function(){
+ var shrinkHeader = 300;
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+      if ( scroll >= shrinkHeader ) {
+           $('.sticky-subheader').addClass('showSticky');
+        }
+        else {
+            $('.sticky-subheader').removeClass('showSticky');
+        }
+  });
+function getCurrentScroll() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+    }
+});
+</script>

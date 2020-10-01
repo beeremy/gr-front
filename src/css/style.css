@@ -21865,6 +21865,23 @@ a.headline-link {
       top: 7px !important;
       color: #333; }
 
+.sticky-subheader {
+  background-color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12); }
+  .sticky-subheader .teacher-picture img {
+    border-radius: 50%; }
+
+.showSticky {
+  opacity: 1; }
+
+.container.subheader {
+  max-width: 960px; }
+
 /* ---------------------------------- */
 /* Stage - Layout
 ------------------------------------- */
