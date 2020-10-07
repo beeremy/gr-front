@@ -21848,17 +21848,113 @@ a.headline-link {
 
 .header-notifications-trigger-allow-link {
   font-size: 22px;
-  color: #333;
+  color: #666;
   position: relative;
-  top: 55%;
+  top: 41%;
   transform: translate3d(0, -50%, 0); }
   .header-notifications-trigger-allow-link a {
-    font-size: 22px;
-    color: #333;
+    font-size: 16px;
+    color: #666;
     position: relative;
-    top: 55%;
+    top: 41%;
     transform: translate3d(0, -50%, 0); }
+    .header-notifications-trigger-allow-link a i {
+      font-size: 28px;
+      margin-left: 5px;
+      position: relative !important;
+      top: 7px !important;
+      color: #333; }
 
+.sticky-subheader {
+  background-color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12); }
+  .sticky-subheader .teacher-picture img {
+    border-radius: 50%; }
+
+.showSticky {
+  opacity: 1; }
+
+.container.subheader {
+  max-width: 960px; }
+
+/* ---------------------------------- */
+/* Teacher - Layout
+------------------------------------- */
+.sticky-teacher-header {
+  position: sticky;
+  top: 70px;
+  z-index: 10;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden; }
+
+.sticky-teacher-header-shrinked {
+  position: sticky;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0); }
+
+.do-not-display {
+  display: none !important;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0); }
+
+.in-line {
+  display: inline !important;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0); }
+
+#teacher-name-title.shrinked {
+  margin: 0;
+  padding-top: 10px;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0); }
+
+#teacher-picture.shrinked {
+  height: 80px;
+  flex: 0 0 80px;
+  width: 80px;
+  margin-top: 10px;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0); }
+
+.teacher-cta {
+  justify-content: center;
+  padding-top: 10px;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0); }
+  .teacher-cta a {
+    margin-bottom: 0 !important; }
+
+.sticky-mobile-teacher-cta {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  left: 0;
+  z-index: 999;
+  padding: 0 13px;
+  box-shadow: 0px -3px 13px 0px rgba(0, 0, 0, 0.12); }
+
+@media (max-width: 1099px) {
+  #sidebar-teacher-cta-button {
+    margin-bottom: 13px !important;
+    margin-top: 13px; } }
+/* ---------------------------------- */
+/* Teacher end - Layout
+------------------------------------- */
 /* ---------------------------------- */
 /* Stage - Layout
 ------------------------------------- */
