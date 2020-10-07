@@ -48,13 +48,32 @@ $('#snackbar-user-status label').click(function() {
 // Teacher header sticky function
 $(function(){
  var shrinkHeader = 300;
+ var stickyHeader = $('.single-page-header.freelancer-header.sticky-teacher-header')
   $(window).scroll(function() {
     var scroll = getCurrentScroll();
       if ( scroll >= shrinkHeader ) {
-           $('.sticky-subheader').addClass('showSticky');
+           // $('.sticky-subheader').addClass('showSticky');
+					 stickyHeader.addClass('sticky-teacher-header-shrinked');
+					 $('#teacher-title').addClass('in-line');
+					 $('#teacher-topics').addClass('do-not-display');
+					 $('#teacher-name-title').addClass('shrinked');
+					 $('#teacher-badge').addClass('do-not-display');
+					 $('#teacher-picture').addClass('shrinked');
+					 $('.teacher-cta').removeClass('do-not-display');
+
+
         }
         else {
-            $('.sticky-subheader').removeClass('showSticky');
+            // $('.sticky-subheader').removeClass('showSticky');
+						stickyHeader.removeClass('sticky-teacher-header-shrinked');
+						$('#teacher-title').removeClass('in-line');
+						$('#teacher-topics').removeClass('do-not-display');
+						$('#teacher-name-title').removeClass('shrinked');
+						$('#teacher-badge').removeClass('do-not-display');
+						$('#teacher-picture').removeClass('shrinked');
+						$('.teacher-cta').addClass('do-not-display');
+
+
         }
   });
 function getCurrentScroll() {

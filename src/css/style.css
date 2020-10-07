@@ -21883,6 +21883,62 @@ a.headline-link {
   max-width: 960px; }
 
 /* ---------------------------------- */
+/* Teacher - Layout
+------------------------------------- */
+.sticky-teacher-header {
+  position: sticky;
+  top: 70px;
+  z-index: 10;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden; }
+
+.sticky-teacher-header-shrinked {
+  position: sticky;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0); }
+
+.do-not-display {
+  display: none !important;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0); }
+
+.in-line {
+  display: inline !important;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0); }
+
+#teacher-name-title.shrinked {
+  margin: 0;
+  padding-top: 10px;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0); }
+
+#teacher-picture.shrinked {
+  height: 80px;
+  flex: 0 0 80px;
+  width: 80px;
+  margin-top: 10px;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0); }
+
+.teacher-cta {
+  justify-content: center;
+  padding-top: 10px; }
+  .teacher-cta a {
+    margin-bottom: 0 !important; }
+
+/* ---------------------------------- */
+/* Teacher end - Layout
+------------------------------------- */
+/* ---------------------------------- */
 /* Stage - Layout
 ------------------------------------- */
 span.bookmark-icon-price {
