@@ -21931,10 +21931,27 @@ a.headline-link {
 
 .teacher-cta {
   justify-content: center;
-  padding-top: 10px; }
+  padding-top: 10px;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0); }
   .teacher-cta a {
     margin-bottom: 0 !important; }
 
+.sticky-mobile-teacher-cta {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  left: 0;
+  z-index: 999;
+  padding: 0 13px;
+  box-shadow: 0px -3px 13px 0px rgba(0, 0, 0, 0.12); }
+
+@media (max-width: 1099px) {
+  #sidebar-teacher-cta-button {
+    margin-bottom: 13px !important;
+    margin-top: 13px; } }
 /* ---------------------------------- */
 /* Teacher end - Layout
 ------------------------------------- */
